@@ -1,0 +1,1 @@
+targetWall = roomWallSecond;
