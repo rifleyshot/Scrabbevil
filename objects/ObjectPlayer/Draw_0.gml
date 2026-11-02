@@ -8,8 +8,8 @@ draw_sprite_part(
     0,
     frameSize,
     frameSize,
-    x ,
-    y 
+    x - (frameSize / 2),  // recenter sprite as draw_sprite_part doesn't respect sprite origin
+    y - (frameSize / 2)
 );
 
 if (target != noone && instance_exists(target)) {
@@ -27,5 +27,7 @@ if (target != noone && instance_exists(target)) {
 if (place_meeting(x, y, objView)) {
 draw_set_font(tileFont);
 draw_set_color(c_white);
-draw_text(x, y, "E");
+draw_set_halign(fa_center);
+draw_set_valign(fa_center);
+draw_text(x, y - 24, "E");
 }
