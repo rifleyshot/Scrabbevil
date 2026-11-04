@@ -43,8 +43,9 @@ frameSize = 32;
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 106D4343
+/// @DnDArgument : "expr" "90"
 /// @DnDArgument : "var" "dir"
-dir = 0;
+dir = 90;
 
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1

@@ -17,8 +17,8 @@
   ],
   "name":"roomWallSecond",
   "parent":{
-    "name":"Scrabbevil",
-    "path":"Scrabbevil.yyp",
+    "name":"Rooms",
+    "path":"folders/Rooms.yy",
   },
   "parentRoom":null,
   "physicsSettings":{
