@@ -1,1 +1,2 @@
 playerSet = false;
+letter = "E";
