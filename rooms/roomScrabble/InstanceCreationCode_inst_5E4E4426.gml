@@ -1,3 +1,3 @@
 targetRoom = roomPuzzle;
-targetX = 830;
-targetY = 157;
+targetX = 479;
+targetY = 126;

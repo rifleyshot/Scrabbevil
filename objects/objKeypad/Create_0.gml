@@ -2,19 +2,29 @@
 
 // the key:  DOWN, UP, RIGHT
 key = [3, 1, 2];
+input = [];
 progress = 0;
 solved = global.flags[$ "keypad_solved"] ?? false;
 reward = ["H","A","M","M","R"]
 message = "";
+tryAgain = false;
 
 press = function(_dir) {
-    if (_dir == key[progress]) {
-        progress++;
-        if (progress >= array_length(key)) {
-				giveReward();
-		}
+    if (solved) exit;
+	tryAgain = false;
+	    array_push(input, _dir);
+		
+		 if (array_length(input) < array_length(key)) exit; // wait for however many input ( as long as the key array, this is so we can easily make it more complicated if you want)
+		var correct = true;
+    for (var i = 0; i < array_length(key); i++) {
+        if (input[i] != key[i]) correct = false;
+    }
+
+    if (correct) {
+        giveReward();
     } else {
-        progress = (_dir == key[0]) ? 1 : 0;
+		tryAgain = true;
+        input = []; // try again loser
     }
 };
 

@@ -17,7 +17,9 @@
     {"$GMFolder":"","%Name":"tilesets","folderPath":"folders/tilesets.yy","name":"tilesets","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"titlescreen","folderPath":"folders/titlescreen.yy","name":"titlescreen","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
-  "ForcedPrefabProjectReferences":[],
+  "ForcedPrefabProjectReferences":[
+    {"link":"io.gamemaker.sdfshaders-1.0.0","name":"io.gamemaker.sdfshaders-1.0.0","path":"io.gamemaker.sdfshaders-1.0.0.yyp",},
+  ],
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"Puzzle track demo 1.m4a","CopyToMask":-1,"filePath":"datafiles","name":"Puzzle track demo 1.m4a","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
   ],
