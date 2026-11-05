@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprPlaceholder",
-    "path":"sprites/sprPlaceholder/sprPlaceholder.yy",
+    "name":"sprExit",
+    "path":"sprites/sprExit/sprExit.yy",
   },
   "spriteMaskId":null,
   "visible":true,

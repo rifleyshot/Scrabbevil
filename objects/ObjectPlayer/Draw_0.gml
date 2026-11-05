@@ -1,4 +1,4 @@
-
+// for 8 way turn around of character when walking
 xFrame = round((90 - dir + 360) / 45) mod 8;
 
 draw_sprite_part(
@@ -12,6 +12,7 @@ draw_sprite_part(
     y - (frameSize / 2)
 );
 
+// in scrabble room, visually show which one you will pick up so people dont accidentally pick up one they dont want to
 if (target != noone && instance_exists(target)) {
     if (target.playerSet) {
         draw_set_color(c_yellow);
