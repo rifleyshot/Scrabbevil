@@ -30,7 +30,7 @@ press = function(_dir) {
 
 giveReward = function() {
 	for (var i = 0; i < array_length(reward); i++) {
-        objInventory.add_letter(reward[i]);
+        objInventory.addLetter(reward[i]);
     }
 
     global.flags.keypad_solved = true;

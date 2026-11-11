@@ -27,15 +27,35 @@ if (_hor != 0 || _ver != 0) {
 }
 
 // visual targetting
-if (tile != noone && point_distance(x, y, tile.x, tile.y) < 48) {
+if (tile != noone && point_distance(x, y, tile.x +16, tile.y +16) < 48) {
     target = tile;
 }
 
 // pick up tile and place it in your inventory
 if (target != noone && keyboard_check_pressed(ord("E"))) {
-    if (target.playerSet && objInventory.add_letter(target.letter)) {
+    if (target.playerSet && objInventory.addLetter(target.letter)) {
+		objBoard.removePiece(target);
         instance_destroy(target);
         target = noone;
 		show_debug_message(objInventory.item_array);
     }
 }
+
+//placing from inv
+if (keyboard_check_pressed(ord("Q"))) {
+    var _letter = objInventory.getLetter();
+
+    if (_letter != "") {
+        var _face = round(dir / 90) * 90;
+        var _fx = round(lengthdir_x(1, _face));
+        var _fy = round(lengthdir_y(1, _face));
+
+        var _cx = (bbox_left + bbox_right) / 2;
+        var _cy = (bbox_top + bbox_bottom) / 2;
+        var _col = objBoard.xToCell(_cx) + _fx;
+        var _row = objBoard.yToCell(_cy) + _fy;
+
+        if (objBoard.placePiece(_col, _row, _letter, true) != noone) {
+            objInventory.removeLetter();
+		}}}
+   

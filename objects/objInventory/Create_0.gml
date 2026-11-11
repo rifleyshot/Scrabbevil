@@ -15,7 +15,7 @@ for (var i = 0; i < 9; i++) {
     };
 }
 
-add_letter = function(_letter) {
+addLetter = function(_letter) {
     for (var i = 0; i < array_length(item_array); i++) {
         if (!item_array[i].filled) {
             item_array[i].letter = _letter;
@@ -24,4 +24,17 @@ add_letter = function(_letter) {
         }
     }
     return false;
+};
+
+// select letter
+getLetter = function() {
+    var _slot = item_array[item_pos];
+    return _slot.filled ? _slot.letter : "";
+};
+
+//remove it from the array
+removeLetter = function() {
+    var _slot = item_array[item_pos];
+    _slot.letter = "";
+    _slot.filled = false;
 };

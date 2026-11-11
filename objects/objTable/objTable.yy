@@ -26,10 +26,10 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":true,
+  "solid":false,
   "spriteId":{
-    "name":"sprPlaceholder",
-    "path":"sprites/sprPlaceholder/sprPlaceholder.yy",
+    "name":"sprPuzzle",
+    "path":"sprites/sprPuzzle/sprPuzzle.yy",
   },
   "spriteMaskId":null,
   "visible":true,
