@@ -1,1 +1,3 @@
-depth = -100;
+hintText = "";
+hintTimer = 0;
+broken = false;

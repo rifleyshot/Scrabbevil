@@ -3,6 +3,6 @@ if (instance_number(objItems) > 1) {
     exit;
 }
 
-hasCrowbar = false;
+hasCrowbar = true;
 hasTrumpet = false;
 hasDoorKey = false;

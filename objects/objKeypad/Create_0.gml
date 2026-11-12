@@ -5,7 +5,7 @@ key = [3, 1, 2];
 input = [];
 progress = 0;
 solved = global.flags[$ "keypad_solved"] ?? false;
-reward = ["H","A","M","M","R"]
+reward = ["C","R","O","B","A","R"]
 message = "";
 tryAgain = false;
 

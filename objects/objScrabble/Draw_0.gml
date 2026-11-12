@@ -4,3 +4,6 @@ draw_set_valign(fa_middle);
 draw_set_font(tileFont);
 draw_set_color(c_black);
 draw_text(x +16, y + 16, letter);
+
+draw_set_halign(fa_left);
+draw_set_valign(fa_top);

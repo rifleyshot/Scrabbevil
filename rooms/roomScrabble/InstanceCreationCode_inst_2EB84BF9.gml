@@ -1,2 +1,0 @@
-playerSet = false;
-letter = "E";

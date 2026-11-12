@@ -42,7 +42,7 @@ if (target != noone && keyboard_check_pressed(ord("E"))) {
 }
 
 //placing from inv
-if (keyboard_check_pressed(ord("Q"))) {
+if (room == roomScrabble) && (keyboard_check_pressed(ord("Q"))) {
     var _letter = objInventory.getLetter();
 
     if (_letter != "") {
