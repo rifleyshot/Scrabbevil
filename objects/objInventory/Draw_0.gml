@@ -1,5 +1,30 @@
 draw_self();
+// hp bar
+var hp = 100;
+switch (hp)
+{
+    case 100:
+        draw_sprite_ext(sprHealthbar100, 0, 5, 5, 1.5, 1.5, 0, c_white, 1);
+    break;
 
+    case 75:
+      draw_sprite_ext(sprHealthbar75, 0, 5, 5, 1.5, 1.5, 0, c_white, 1);
+    break;
+
+    case 50:
+        draw_sprite_ext(sprHealthbar50, 0, 5, 5, 1.5, 1.5, 0, c_white, 1);
+    break;
+	
+	case 25:
+        draw_sprite_ext(sprHealthbar25, 0, 5, 5, 1.5, 1.5, 0, c_white, 1);
+    break;
+
+    default:
+        draw_sprite_ext(sprHealthbar100, 0, 5, 5, 1.5, 1.5, 0, c_white, 1);
+    break;
+}
+
+// actual inventory
 var _slots   = array_length(item_array);
 var _bar_w   = 640;
 var _slot_w  = _bar_w / _slots;   

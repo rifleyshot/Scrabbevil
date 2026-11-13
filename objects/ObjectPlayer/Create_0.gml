@@ -14,20 +14,6 @@ target = noone;
 
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
-/// @DnDHash : 0976AAE6
-/// @DnDArgument : "expr" "100"
-/// @DnDArgument : "var" "maxhp"
-maxhp = 100;
-
-/// @DnDAction : YoYo Games.Common.Variable
-/// @DnDVersion : 1
-/// @DnDHash : 191A891F
-/// @DnDArgument : "expr" "100"
-/// @DnDArgument : "var" "hp"
-hp = 100;
-
-/// @DnDAction : YoYo Games.Common.Variable
-/// @DnDVersion : 1
 /// @DnDHash : 2B647823
 /// @DnDArgument : "expr" "true"
 /// @DnDArgument : "var" "canMove"

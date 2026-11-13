@@ -1,3 +1,4 @@
+depth = -10
 
 if (instance_number(objInventory) > 1) {
     instance_destroy();
