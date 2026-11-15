@@ -46,16 +46,10 @@ if (room == roomScrabble) && (keyboard_check_pressed(ord("Q"))) {
     var _letter = objInventory.getLetter();
 
     if (_letter != "") {
-        var _face = round(dir / 90) * 90;
-        var _fx = round(lengthdir_x(1, _face));
-        var _fy = round(lengthdir_y(1, _face));
-
-        var _cx = (bbox_left + bbox_right) / 2;
-        var _cy = (bbox_top + bbox_bottom) / 2;
-        var _col = objBoard.xToCell(_cx) + _fx;
-        var _row = objBoard.yToCell(_cy) + _fy;
-
+		 var _facing = round(dir / 90) mod 4;  
+		 var _col = objBoard.xToCell(x) + [1, 0, -1, 0][_facing];
+		 var _row = objBoard.yToCell(y) + [0, -1, 0, 1][_facing];
+		 
         if (objBoard.placePiece(_col, _row, _letter, true) != noone) {
             objInventory.removeLetter();
 		}}}
-   

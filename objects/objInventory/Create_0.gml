@@ -1,4 +1,5 @@
 depth = -10
+hp = 100;
 
 if (instance_number(objInventory) > 1) {
     instance_destroy();

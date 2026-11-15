@@ -1,1 +1,2 @@
 targetWall = roomButtons;
+watchBookshelf = true;

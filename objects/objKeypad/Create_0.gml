@@ -32,6 +32,7 @@ giveReward = function() {
 	for (var i = 0; i < array_length(reward); i++) {
         objInventory.addLetter(reward[i]);
     }
+	global.bookshelfMove = true;
 
     global.flags.keypad_solved = true;
 	message = "Scrabble tiles fell into your pocket..";

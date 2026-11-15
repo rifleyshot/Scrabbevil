@@ -1,3 +1,3 @@
 targetRoom = roomScrabble;
-targetX = 606;
+targetX = 640;
 targetY = 510;

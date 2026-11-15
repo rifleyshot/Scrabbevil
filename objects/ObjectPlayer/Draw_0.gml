@@ -14,13 +14,10 @@ draw_sprite_part(
 
 // in scrabble room, visually show which one you will pick up so people dont accidentally pick up one they dont want to
 if (target != noone && instance_exists(target)) {
+	depth = -9
     if (target.playerSet) {
-        draw_set_color(c_yellow);
+		draw_sprite(sprSelect, 0, target.x, target.y)
     } else {
-        draw_set_color(c_red);
+       draw_sprite(sprSelectNo, 0, target.x, target.y)
     }
-
-    draw_rectangle(target.bbox_left - 2, target.bbox_top - 2,
-                   target.bbox_right + 2, target.bbox_bottom + 2, true);
-    draw_set_color(c_white);
 }

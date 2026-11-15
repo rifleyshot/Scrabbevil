@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scriptRound",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scriptRound",
+  "parent":{
+    "name":"Scrabbevil",
+    "path":"Scrabbevil.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

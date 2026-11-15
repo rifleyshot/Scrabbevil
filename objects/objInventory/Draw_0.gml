@@ -1,6 +1,5 @@
 draw_self();
-// hp bar
-var hp = 100;
+
 switch (hp)
 {
     case 100:

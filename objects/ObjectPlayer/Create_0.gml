@@ -1,12 +1,5 @@
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
-/// @DnDHash : 0D462DE1
-/// @DnDArgument : "expr" "4"
-/// @DnDArgument : "var" "player_speed"
-player_speed = 4;
-
-/// @DnDAction : YoYo Games.Common.Variable
-/// @DnDVersion : 1
 /// @DnDHash : 1C9719A9
 /// @DnDArgument : "expr" "noone"
 /// @DnDArgument : "var" "target"
@@ -25,6 +18,13 @@ canMove = true;
 /// @DnDArgument : "expr" "32"
 /// @DnDArgument : "var" "frameSize"
 frameSize = 32;
+
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 73F583DB
+/// @DnDArgument : "expr" "3.5"
+/// @DnDArgument : "var" "player_speed"
+player_speed = 3.5;
 
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
